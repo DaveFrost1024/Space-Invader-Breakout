@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/david/Desktop/Dev-Playground/sdl-project-1/src
+CMAKE_SOURCE_DIR = /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/david/Desktop/Dev-Playground/sdl-project-1/build
+CMAKE_BINARY_DIR = /home/david/Desktop/Github-Projects/Space-Invader-Breakout/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Desktop/Dev-Playground/sdl-project-1/build/CMakeFiles /home/david/Desktop/Dev-Playground/sdl-project-1/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles /home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Desktop/Dev-Playground/sdl-project-1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sdlProject1
+# Target rules for targets named Space-Invader-Breakout
 
 # Build rule for target.
-sdlProject1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sdlProject1
-.PHONY : sdlProject1
+Space-Invader-Breakout: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Space-Invader-Breakout
+.PHONY : Space-Invader-Breakout
 
 # fast build rule for target.
-sdlProject1/fast:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/build
-.PHONY : sdlProject1/fast
+Space-Invader-Breakout/fast:
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/build
+.PHONY : Space-Invader-Breakout/fast
 
 Dot.o: Dot.cpp.o
 
@@ -129,7 +129,7 @@ Dot.o: Dot.cpp.o
 
 # target to build an object file
 Dot.cpp.o:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Dot.cpp.o
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Dot.cpp.o
 .PHONY : Dot.cpp.o
 
 Dot.i: Dot.cpp.i
@@ -138,7 +138,7 @@ Dot.i: Dot.cpp.i
 
 # target to preprocess a source file
 Dot.cpp.i:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Dot.cpp.i
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Dot.cpp.i
 .PHONY : Dot.cpp.i
 
 Dot.s: Dot.cpp.s
@@ -147,7 +147,7 @@ Dot.s: Dot.cpp.s
 
 # target to generate assembly for a file
 Dot.cpp.s:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Dot.cpp.s
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Dot.cpp.s
 .PHONY : Dot.cpp.s
 
 LTexture.o: LTexture.cpp.o
@@ -156,7 +156,7 @@ LTexture.o: LTexture.cpp.o
 
 # target to build an object file
 LTexture.cpp.o:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/LTexture.cpp.o
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.o
 .PHONY : LTexture.cpp.o
 
 LTexture.i: LTexture.cpp.i
@@ -165,7 +165,7 @@ LTexture.i: LTexture.cpp.i
 
 # target to preprocess a source file
 LTexture.cpp.i:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/LTexture.cpp.i
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.i
 .PHONY : LTexture.cpp.i
 
 LTexture.s: LTexture.cpp.s
@@ -174,7 +174,7 @@ LTexture.s: LTexture.cpp.s
 
 # target to generate assembly for a file
 LTexture.cpp.s:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/LTexture.cpp.s
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.s
 .PHONY : LTexture.cpp.s
 
 Obstacle.o: Obstacle.cpp.o
@@ -183,7 +183,7 @@ Obstacle.o: Obstacle.cpp.o
 
 # target to build an object file
 Obstacle.cpp.o:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Obstacle.cpp.o
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.o
 .PHONY : Obstacle.cpp.o
 
 Obstacle.i: Obstacle.cpp.i
@@ -192,7 +192,7 @@ Obstacle.i: Obstacle.cpp.i
 
 # target to preprocess a source file
 Obstacle.cpp.i:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Obstacle.cpp.i
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.i
 .PHONY : Obstacle.cpp.i
 
 Obstacle.s: Obstacle.cpp.s
@@ -201,7 +201,7 @@ Obstacle.s: Obstacle.cpp.s
 
 # target to generate assembly for a file
 Obstacle.cpp.s:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Obstacle.cpp.s
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.s
 .PHONY : Obstacle.cpp.s
 
 Paddle.o: Paddle.cpp.o
@@ -210,7 +210,7 @@ Paddle.o: Paddle.cpp.o
 
 # target to build an object file
 Paddle.cpp.o:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Paddle.cpp.o
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o
 .PHONY : Paddle.cpp.o
 
 Paddle.i: Paddle.cpp.i
@@ -219,7 +219,7 @@ Paddle.i: Paddle.cpp.i
 
 # target to preprocess a source file
 Paddle.cpp.i:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Paddle.cpp.i
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.i
 .PHONY : Paddle.cpp.i
 
 Paddle.s: Paddle.cpp.s
@@ -228,7 +228,7 @@ Paddle.s: Paddle.cpp.s
 
 # target to generate assembly for a file
 Paddle.cpp.s:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Paddle.cpp.s
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.s
 .PHONY : Paddle.cpp.s
 
 Projectile.o: Projectile.cpp.o
@@ -237,7 +237,7 @@ Projectile.o: Projectile.cpp.o
 
 # target to build an object file
 Projectile.cpp.o:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Projectile.cpp.o
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.o
 .PHONY : Projectile.cpp.o
 
 Projectile.i: Projectile.cpp.i
@@ -246,7 +246,7 @@ Projectile.i: Projectile.cpp.i
 
 # target to preprocess a source file
 Projectile.cpp.i:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Projectile.cpp.i
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.i
 .PHONY : Projectile.cpp.i
 
 Projectile.s: Projectile.cpp.s
@@ -255,7 +255,7 @@ Projectile.s: Projectile.cpp.s
 
 # target to generate assembly for a file
 Projectile.cpp.s:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/Projectile.cpp.s
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.s
 .PHONY : Projectile.cpp.s
 
 common.o: common.cpp.o
@@ -264,7 +264,7 @@ common.o: common.cpp.o
 
 # target to build an object file
 common.cpp.o:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/common.cpp.o
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o
 .PHONY : common.cpp.o
 
 common.i: common.cpp.i
@@ -273,7 +273,7 @@ common.i: common.cpp.i
 
 # target to preprocess a source file
 common.cpp.i:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/common.cpp.i
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/common.cpp.i
 .PHONY : common.cpp.i
 
 common.s: common.cpp.s
@@ -282,7 +282,7 @@ common.s: common.cpp.s
 
 # target to generate assembly for a file
 common.cpp.s:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/common.cpp.s
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/common.cpp.s
 .PHONY : common.cpp.s
 
 main.o: main.cpp.o
@@ -291,7 +291,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -300,7 +300,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -309,7 +309,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/sdlProject1.dir/build.make CMakeFiles/sdlProject1.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -319,7 +319,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... sdlProject1"
+	@echo "... Space-Invader-Breakout"
 	@echo "... edit_cache"
 	@echo "... Dot.o"
 	@echo "... Dot.i"
