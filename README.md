@@ -14,11 +14,11 @@ Em... I'll get to that eventually. If need be.
 
 ## How to play
 
-* Enter to launch the ball and begin the game
+* Press "Enter/Return" to launch the ball and begin the game
 * Left and right arrow key to move paddle.
 * Keep the ball from falling and dodge lazers from space invaders.
 * No game over screen yet, so if the game freeze it just means you've lost.
-* If you've lost, press enter again to restart the game.
+* If you've lost, press "Enter/Return" again to restart the game.
 
 ## License
 MIT License.
