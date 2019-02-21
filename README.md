@@ -1,4 +1,4 @@
-# Space-Invader-Breakout
+# Space Invader Breakout
 
 Space Invader Breakout is a tiny game about mixing Atari Breakout and Space Invaders together. This game is meant to resemble old school arcade games both in look and feel and in gameplay, just without all the limitations. The game is made on Ubuntu as a side project for learning C++ (So please excuse the unorganized files, poorly written code, etc). Game is still a work in progress.
 
