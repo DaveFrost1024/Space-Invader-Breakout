@@ -7,6 +7,18 @@
 #include <string>
 #include <vector>
 
+// screen dimension
+const int SCREEN_WIDTH = 640;
+const int SCREEN_HEIGHT = 480;
+
+// obstacle dimension
+const int OBSTACLE_ROW = 3;
+const int OBSTACLE_COLUMN = 7;
+
+// projectile settings
+const int PROJECTILE_LIMIT = 5;
+const int PROJ_MIN_COOLDOWN = 15;
+const int PROJ_MAX_COOLDOWN = 180;
 
 enum Type
 {
