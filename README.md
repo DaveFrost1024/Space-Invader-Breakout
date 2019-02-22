@@ -6,7 +6,7 @@ Space Invader Breakout is a tiny game about mixing Atari Breakout and Space Inva
 
 #### Linux
 
-Download the project and go to compile folder, there should already be an executable there, run it and enjoy the game.
+Download the project and go to compile folder, there should already be an executable there, run it from command line and enjoy the game.
 
 #### Window and mac
 
