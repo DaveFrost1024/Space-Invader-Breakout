@@ -81,9 +81,33 @@ CMakeFiles/Space-Invader-Breakout.dir/main.cpp.o.provides: CMakeFiles/Space-Inva
 CMakeFiles/Space-Invader-Breakout.dir/main.cpp.o.provides.build: CMakeFiles/Space-Invader-Breakout.dir/main.cpp.o
 
 
+CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o: CMakeFiles/Space-Invader-Breakout.dir/flags.make
+CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o: /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o -c /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.cpp
+
+CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.cpp > CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.i
+
+CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.cpp -o CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.s
+
+CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o.requires:
+
+.PHONY : CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o.requires
+
+CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o.provides: CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o.provides.build
+.PHONY : CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o.provides
+
+CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o.provides.build: CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o
+
+
 CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o: CMakeFiles/Space-Invader-Breakout.dir/flags.make
 CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o: /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o -c /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.cpp
 
 CMakeFiles/Space-Invader-Breakout.dir/common.cpp.i: cmake_force
@@ -107,7 +131,7 @@ CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o.provides.build: CMakeFiles/Sp
 
 CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.o: CMakeFiles/Space-Invader-Breakout.dir/flags.make
 CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.o: /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/LTexture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.o -c /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/LTexture.cpp
 
 CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.i: cmake_force
@@ -131,7 +155,7 @@ CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o: CMakeFiles/Space-Invader-Breakout.dir/flags.make
 CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o: /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Paddle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o -c /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Paddle.cpp
 
 CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o.provides.build: CMakeFiles/Sp
 
 CMakeFiles/Space-Invader-Breakout.dir/Dot.cpp.o: CMakeFiles/Space-Invader-Breakout.dir/flags.make
 CMakeFiles/Space-Invader-Breakout.dir/Dot.cpp.o: /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Dot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/Dot.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/Dot.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space-Invader-Breakout.dir/Dot.cpp.o -c /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Dot.cpp
 
 CMakeFiles/Space-Invader-Breakout.dir/Dot.cpp.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/Space-Invader-Breakout.dir/Dot.cpp.o.provides.build: CMakeFiles/Space
 
 CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.o: CMakeFiles/Space-Invader-Breakout.dir/flags.make
 CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.o: /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Obstacle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.o -c /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Obstacle.cpp
 
 CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.o: CMakeFiles/Space-Invader-Breakout.dir/flags.make
 CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.o: /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Projectile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.o -c /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Projectile.cpp
 
 CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.i: cmake_force
@@ -228,6 +252,7 @@ CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.o.provides.build: CMakeFile
 # Object files for target Space-Invader-Breakout
 Space__Invader__Breakout_OBJECTS = \
 "CMakeFiles/Space-Invader-Breakout.dir/main.cpp.o" \
+"CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o" \
 "CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o" \
 "CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.o" \
 "CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o" \
@@ -239,6 +264,7 @@ Space__Invader__Breakout_OBJECTS = \
 Space__Invader__Breakout_EXTERNAL_OBJECTS =
 
 Space-Invader-Breakout: CMakeFiles/Space-Invader-Breakout.dir/main.cpp.o
+Space-Invader-Breakout: CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o
 Space-Invader-Breakout: CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o
 Space-Invader-Breakout: CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.o
 Space-Invader-Breakout: CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o
@@ -247,7 +273,7 @@ Space-Invader-Breakout: CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.o
 Space-Invader-Breakout: CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.o
 Space-Invader-Breakout: CMakeFiles/Space-Invader-Breakout.dir/build.make
 Space-Invader-Breakout: CMakeFiles/Space-Invader-Breakout.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Space-Invader-Breakout"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Space-Invader-Breakout"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Space-Invader-Breakout.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -256,6 +282,7 @@ CMakeFiles/Space-Invader-Breakout.dir/build: Space-Invader-Breakout
 .PHONY : CMakeFiles/Space-Invader-Breakout.dir/build
 
 CMakeFiles/Space-Invader-Breakout.dir/requires: CMakeFiles/Space-Invader-Breakout.dir/main.cpp.o.requires
+CMakeFiles/Space-Invader-Breakout.dir/requires: CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o.requires
 CMakeFiles/Space-Invader-Breakout.dir/requires: CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o.requires
 CMakeFiles/Space-Invader-Breakout.dir/requires: CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.o.requires
 CMakeFiles/Space-Invader-Breakout.dir/requires: CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o.requires

@@ -80,6 +80,28 @@ LTexture.h
 common.h
 /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.h
 
+/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.cpp
+Setup.h
+/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.h
+
+/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.h
+SDL2/SDL.h
+-
+SDL2/SDL_image.h
+-
+SDL2/SDL_ttf.h
+-
+stdio.h
+-
+iostream
+-
+vector
+-
+common.h
+/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.h
+LTexture.h
+/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/LTexture.h
+
 /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.cpp
 common.h
 /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.h
@@ -115,6 +137,8 @@ ctime
 -
 math.h
 -
+Setup.h
+/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.h
 common.h
 /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.h
 LTexture.h

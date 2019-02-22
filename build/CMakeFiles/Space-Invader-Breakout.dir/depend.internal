@@ -22,6 +22,11 @@ CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.o
  /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Projectile.cpp
  /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Projectile.h
  /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.h
+CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o
+ /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/LTexture.h
+ /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.cpp
+ /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.h
+ /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.h
 CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o
  /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.cpp
  /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.h
@@ -31,5 +36,6 @@ CMakeFiles/Space-Invader-Breakout.dir/main.cpp.o
  /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Obstacle.h
  /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Paddle.h
  /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Projectile.h
+ /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.h
  /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.h
  /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/main.cpp

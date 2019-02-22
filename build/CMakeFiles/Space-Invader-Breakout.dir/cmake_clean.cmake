@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Space-Invader-Breakout.dir/main.cpp.o"
+  "CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o"
   "CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o"
   "CMakeFiles/Space-Invader-Breakout.dir/LTexture.cpp.o"
   "CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o"

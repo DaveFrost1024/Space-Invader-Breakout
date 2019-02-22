@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Obstacle.cpp" "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles/Space-Invader-Breakout.dir/Obstacle.cpp.o"
   "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Paddle.cpp" "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles/Space-Invader-Breakout.dir/Paddle.cpp.o"
   "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Projectile.cpp" "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.o"
+  "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Setup.cpp" "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o"
   "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.cpp" "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles/Space-Invader-Breakout.dir/common.cpp.o"
   "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/main.cpp" "/home/david/Desktop/Github-Projects/Space-Invader-Breakout/build/CMakeFiles/Space-Invader-Breakout.dir/main.cpp.o"
   )

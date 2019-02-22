@@ -258,6 +258,33 @@ Projectile.cpp.s:
 	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Projectile.cpp.s
 .PHONY : Projectile.cpp.s
 
+Setup.o: Setup.cpp.o
+
+.PHONY : Setup.o
+
+# target to build an object file
+Setup.cpp.o:
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.o
+.PHONY : Setup.cpp.o
+
+Setup.i: Setup.cpp.i
+
+.PHONY : Setup.i
+
+# target to preprocess a source file
+Setup.cpp.i:
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.i
+.PHONY : Setup.cpp.i
+
+Setup.s: Setup.cpp.s
+
+.PHONY : Setup.s
+
+# target to generate assembly for a file
+Setup.cpp.s:
+	$(MAKE) -f CMakeFiles/Space-Invader-Breakout.dir/build.make CMakeFiles/Space-Invader-Breakout.dir/Setup.cpp.s
+.PHONY : Setup.cpp.s
+
 common.o: common.cpp.o
 
 .PHONY : common.o
@@ -336,6 +363,9 @@ help:
 	@echo "... Projectile.o"
 	@echo "... Projectile.i"
 	@echo "... Projectile.s"
+	@echo "... Setup.o"
+	@echo "... Setup.i"
+	@echo "... Setup.s"
 	@echo "... common.o"
 	@echo "... common.i"
 	@echo "... common.s"
