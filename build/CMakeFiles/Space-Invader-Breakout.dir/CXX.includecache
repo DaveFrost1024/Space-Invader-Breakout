@@ -101,6 +101,14 @@ common.h
 /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.h
 LTexture.h
 /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/LTexture.h
+Paddle.h
+/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Paddle.h
+Dot.h
+/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Dot.h
+Obstacle.h
+/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Obstacle.h
+Projectile.h
+/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Projectile.h
 
 /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.cpp
 common.h
@@ -143,12 +151,4 @@ common.h
 /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/common.h
 LTexture.h
 /home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/LTexture.h
-Paddle.h
-/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Paddle.h
-Dot.h
-/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Dot.h
-Obstacle.h
-/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Obstacle.h
-Projectile.h
-/home/david/Desktop/Github-Projects/Space-Invader-Breakout/src/Projectile.h
 
