@@ -1,6 +1,6 @@
 #include "Setup.h"
 
-SDL_Window* initWindow()
+bool initWindow()
 {
     SDL_Window* gWindow;
 
@@ -26,15 +26,19 @@ SDL_Window* initWindow()
         }
         else
         {
-            return gWindow;
+            WindowController::setSdlWindow( gWindow );
+
+            return true;
         }
     }
 
-    return NULL;
+    return false;
 }
 
-SDL_Renderer* initRenderer( SDL_Window* gWindow )
+bool initRenderer()
 {
+    SDL_Window* gWindow = WindowController::getSdlWindow();
+
     SDL_Renderer* gRenderer;
 
     //Create vsynced renderer
@@ -61,15 +65,32 @@ SDL_Renderer* initRenderer( SDL_Window* gWindow )
             printf( "SDL_ttf could not initialize! SDL_ttf Error: %s\n", TTF_GetError() );
         }
 
-        return gRenderer;
+        WindowController::setSdlRenderer( gRenderer );
+
+        return true;
     }
 
-    return NULL;
+    return false;
 }
 
-bool loadMedia( SDL_Renderer* gRenderer, LTexture* gDotTexture, LTexture* gObsTexture, LTexture* gTextTexture, TTF_Font* gFont )
+bool loadMedia( TTF_Font* gFont )
 {
     bool success = true;
+
+    SDL_Renderer* gRenderer = WindowController::getSdlRenderer();
+
+    LTexture dotT;
+    LTexture obsT;
+    LTexture textT;
+    WindowController::insertTexture( "gDotTexture" , dotT );
+    WindowController::insertTexture( "gObsTexture" , obsT );
+    WindowController::insertTexture( "gTextTexture" , textT );
+
+    LTexture* gDotTexture = WindowController::getTexture( "gDotTexture" );
+
+    LTexture* gObsTexture = WindowController::getTexture( "gObsTexture" );
+
+    LTexture* gTextTexture = WindowController::getTexture( "gTextTexture" );
 
     // load texture
     if( !gDotTexture->loadFromFile( gRenderer, "../media/Ball.png", 20, 20 ) )
@@ -170,12 +191,19 @@ std::vector<Obstacle> generateObstacle( int row, int column )
     return obsGroup;
 }
 
-void close( SDL_Window* gWindow, SDL_Renderer* gRenderer, LTexture gDotTexture, LTexture gObsTexture, LTexture gTextTexture, TTF_Font *gFont )
+void close( TTF_Font *gFont )
 {
+    SDL_Window* gWindow = WindowController::getSdlWindow();
+    SDL_Renderer* gRenderer = WindowController::getSdlRenderer();
+
+    LTexture* gDotTexture = WindowController::getTexture( "gDotTexture" );
+    LTexture* gObsTexture = WindowController::getTexture( "gObsTexture" );
+    LTexture* gTextTexture = WindowController::getTexture( "gTextTexture" );
+
     // free loaded images
-    gDotTexture.free();
-    gObsTexture.free();
-    gTextTexture.free();
+    gDotTexture->free();
+    gObsTexture->free();
+    gTextTexture->free();
 
     TTF_CloseFont( gFont );
     gFont = NULL;

@@ -6,7 +6,7 @@
 #include <iostream>
 
 #include "LTexture.h"
-#include "common.h"
+#include "Common.h"
 
 // obstacles that are in your way
 class Obstacle

@@ -1,4 +1,4 @@
-#include "common.h"
+#include "Common.h"
 
 bool checkCollision( Circle& a, std::vector<Circle>& b )
 {

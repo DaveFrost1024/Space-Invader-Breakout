@@ -10,10 +10,14 @@ add_executable(Space-Invader-Breakout
     main.cpp
     Setup.h
     Setup.cpp
-    common.h
-    common.cpp
+    Common.h
+    Common.cpp
     LTexture.h
     LTexture.cpp
+    WindowController.h
+    WindowController.cpp
+    Gameplay.h
+    Gameplay.cpp
     Paddle.h
     Paddle.cpp
     Dot.h
