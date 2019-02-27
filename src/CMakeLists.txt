@@ -1,10 +1,10 @@
-cmake_minimum_required (VERSION 3.1...3.13)
+# cmake_minimum_required (VERSION 3.1...3.13)
 
-if(${CMAKE_VERSION} VERSION_LESS 3.12)
-    cmake_policy(VERSION ${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION})
-endif()
+# if(${CMAKE_VERSION} VERSION_LESS 3.12)
+#     cmake_policy(VERSION ${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION})
+# endif()
 
-project(Space-Invader-Breakout)
+# project(Space-Invader-Breakout)
 
 add_executable(Space-Invader-Breakout
     main.cpp
@@ -38,7 +38,7 @@ target_include_directories(Space-Invader-Breakout PUBLIC
     ${SDL2IMAGE_INCLUDE_DIRS}
     ${SDL2TTF_INCLUDE_DIRS})
 
-target_link_libraries(Space-Invader-Breakout
+target_link_libraries(Space-Invader-Breakout PUBLIC
     ${SDL2_LIBRARIES}
     ${SDL2IMAGE_LIBRARIES}
     ${SDL2TTF_LIBRARIES})

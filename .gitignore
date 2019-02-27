@@ -32,7 +32,8 @@
 *.app
 
 # cmake compile files
-build/CMakeFiles
+**/CMakeFiles
 build/CMakeCache.txt
-build/cmake_install.cmake
-build/Makefile
+**/cmake_install.cmake
+**/Makefile
+build/src
