@@ -10,6 +10,12 @@ addons:
     - g++-6
     - cmake
 
+before_install:
+  - sudo apt-cache search libsdl2
+  - sudo apt-get install libsdl2-dev
+  - sudo apt-get install libsdl2-image-dev
+  - sudo apt-get install libsdl2--ttf-dev
+
 script:
   # setup
   - sudo ln -s /usr/bin/gcc-6 /usr/local/bin/gcc
