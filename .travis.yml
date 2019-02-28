@@ -23,6 +23,7 @@ script:
   - gcc -v && g++ -v && cmake --version
   - cmake -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++
   # build commands
-  - cmake .
+  - cd build
+  - cmake -DRUN_TEST=ON ../
   - make
   - ./tests/tests
