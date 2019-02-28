@@ -9,13 +9,9 @@ addons:
     - gcc-6
     - g++-6
     - cmake
-
-before_install:
-  - sudo apt install libegl1-mesa-dev-lts-xenial 11.2.0-1ubuntu2~trusty2
-  - sudo apt install libgles2-mesa-dev
-  - sudo apt install libsdl2-dev
-  - sudo apt install libsdl2-image-dev
-  - sudo apt install libsdl2--ttf-dev
+    - libsdl2-dev
+    - libsdl2-image-dev
+    - libsdl2--ttf-dev
 
 script:
   # setup
