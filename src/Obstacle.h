@@ -28,6 +28,7 @@ public:
     bool move( float obsSpeed, Direction obsDir );
 
     void render( SDL_Renderer* gRenderer, LTexture *gObsTexture );
+    void render( SDL_Renderer* gRenderer, LTexture *gObsTexture, double interpolation );
 
     // getters
     int getPosX();

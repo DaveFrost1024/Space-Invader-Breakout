@@ -7,6 +7,9 @@ Obstacle::Obstacle(int posX, int posY, int screenWidth, int screenHeight)
     oPosX = posX;
     oPosY = posY;
 
+    oVelX = 0;
+    oVelY = 0;
+
     this->screenWidth = screenWidth;
     this->screenHeight = screenHeight;
 }
@@ -74,6 +77,11 @@ bool Obstacle::move( float obsSpeed, Direction obsDir )
 void Obstacle::render( SDL_Renderer* gRenderer, LTexture *gObsTexture )
 {
     gObsTexture->render(gRenderer, oPosX, oPosY);
+}
+
+void Obstacle::render( SDL_Renderer* gRenderer, LTexture *gObsTexture, double interpolation )
+{
+    gObsTexture->render( gRenderer, oPosX + (oVelX * interpolation), oPosY + (oVelY * interpolation) );
 }
 
 int Obstacle::getPosX()

@@ -28,6 +28,8 @@ public:
 
     int getPosY();
 
+    int getVelX();
+
     // setters
     void setFailed( bool failed );
 

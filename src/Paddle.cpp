@@ -65,12 +65,19 @@ void Paddle::move() {
     }
 }
 
-int Paddle::getPosX() {
+int Paddle::getPosX()
+{
     return pPosX;
 }
 
-int Paddle::getPosY() {
+int Paddle::getPosY()
+{
     return pPosY;
+}
+
+int Paddle::getVelX()
+{
+    return pVelX;
 }
 
 void Paddle::setFailed( bool failed )

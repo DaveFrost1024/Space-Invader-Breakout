@@ -54,6 +54,16 @@ void Projectile::render( SDL_Renderer* gRenderer )
 
 }
 
+void Projectile::render( SDL_Renderer* gRenderer, double interpolation )
+{
+    SDL_Rect temp = collider;
+    temp.x = temp.x + (prVelX * interpolation);
+    temp.y = temp.y + (prVelY * interpolation);
+    SDL_SetRenderDrawColor( gRenderer, 0xFF, 0xFF, 0xFF, 0xFF );
+    SDL_RenderFillRect( gRenderer, &temp );
+
+}
+
 void Projectile::shiftColliders()
 {
     // align collider

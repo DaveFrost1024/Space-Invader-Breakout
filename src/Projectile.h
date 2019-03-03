@@ -27,6 +27,7 @@ public:
     bool move( SDL_Rect paddle );
 
     void render( SDL_Renderer* gRenderer );
+    void render( SDL_Renderer* gRenderer, double interpolation );
 
     // getters
     int getPosX();

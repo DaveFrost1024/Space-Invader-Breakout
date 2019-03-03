@@ -23,13 +23,13 @@ public:
 
     static bool updatePhysics();
 
-    static void renderGame();
+    static void renderGame( double interpolation );
 
 private:
-    static bool quit;
+    /*static bool quit;
 
     static bool fail;
-    static bool restart;
+    static bool restart;*/
 
     static int tps;
     static int skipT;

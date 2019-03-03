@@ -1,15 +1,15 @@
 #include "GameplayController.h"
 
 Direction GameplayController::gObsDir;
-
 int GameplayController::projCooldown;
+
+SDL_Event GameplayController::e;
 
 Dot GameplayController::dot( SCREEN_WIDTH / 2, SCREEN_HEIGHT * 3 / 4, SCREEN_WIDTH, SCREEN_HEIGHT );
 Paddle GameplayController::paddle( (SCREEN_WIDTH / 2) - (Paddle::PADDLE_WIDTH / 2), SCREEN_HEIGHT * 7 / 8, SCREEN_WIDTH, SCREEN_HEIGHT );
 
 std::vector<Obstacle> GameplayController::obsGroup;
 std::vector<Projectile> GameplayController::projGroup;
-
 std::vector<SDL_Rect> GameplayController::rects;
 std::vector<Type> GameplayController::rectTypes;
 
@@ -31,7 +31,7 @@ void GameplayController::gameLoop() {
     bool restart = false;
 
     // variable for framerate
-    int tps = 50;
+    int tps = 60;
     int skipT = 1000 / tps;
     int maxFrameSkip = 5;
     int updateLoop;
@@ -48,10 +48,6 @@ void GameplayController::gameLoop() {
 
     // projectile variable
     projCooldown = rand() % PROJ_MAX_COOLDOWN + 15;
-
-    SDL_Event e;
-
-    // instantiate dot and paddle
 
     // instantiate vector holding all obstacles
     obsGroup.reserve( OBSTACLE_ROW * OBSTACLE_COLUMN );
@@ -110,31 +106,35 @@ void GameplayController::gameLoop() {
         }
 
 
-        //std::cout << "difference " << SDL_GetTicks() << " " << currentT << std::endl;
-        updateLoop = 0;
-        while ( SDL_GetTicks() > currentT && updateLoop < maxFrameSkip )
-        {
-            //std::cout << "update " << updateLoop << " ";
-            currentT += skipT;
-            updateLoop++;
-        }
-
-        newT = SDL_GetTicks() + skipT;
-        interpolation = (newT - currentT) / skipT;
-        //std::cout << "interpolation " << interpolation << " " << newT << " " << currentT << std::endl;
-
 
         if ( !fail )
         {
-            fail = updatePhysics();
 
-            renderGame();
+            updateLoop = 0;
+            while ( SDL_GetTicks() > currentT && updateLoop < maxFrameSkip )
+            {
+                //std::cout << "update " << updateLoop << " " << std::endl;
+                currentT += skipT;
+                updateLoop++;
+
+                fail = updatePhysics();
+            }
+
+            newT = SDL_GetTicks() + skipT;
+            interpolation = (newT - currentT) / skipT;
+            //std::cout << "interpolation " << interpolation << " " << newT << " " << currentT << std::endl;
+
+            //fail = updatePhysics();
+
+            renderGame( interpolation );
         } else {
             paddle.setFailed( true );
         }
 
     }
 }
+
+
 
 void GameplayController::startProg()
 {
@@ -176,6 +176,8 @@ void GameplayController::startProg()
         rectTypes.push_back(Type::obstacle);
     }
 }
+
+
 
 bool GameplayController::updatePhysics()
 {
@@ -320,7 +322,9 @@ bool GameplayController::updatePhysics()
     return fail;
 }
 
-void GameplayController::renderGame ()
+
+
+void GameplayController::renderGame ( double interpolation )
 {
     SDL_Renderer* gRenderer = WindowController::getSdlRenderer();
 
@@ -333,22 +337,24 @@ void GameplayController::renderGame ()
     SDL_RenderClear( gRenderer );
 
     // render paddle
+    SDL_Rect temp = rects[0];
+    temp.x = temp.x + (paddle.getVelX() * interpolation);
     SDL_SetRenderDrawColor( gRenderer, 0xFF, 0xFF, 0xFF, 0xFF );
-    SDL_RenderDrawRect( gRenderer, &rects[0] );
+    SDL_RenderDrawRect( gRenderer, &temp );
     
     // render dot
-    dot.render( gRenderer, gDotTexture );
+    dot.render( gRenderer, gDotTexture, interpolation );
 
     // render obstacles
     for (int i = 0; i < obsGroup.size(); i++)
     {
-        obsGroup[i].render( gRenderer, gObsTexture );
+        obsGroup[i].render( gRenderer, gObsTexture, interpolation );
     }
 
     // render projectiles
     for (int i = 0; i < projGroup.size(); i++)
     {
-        projGroup[i].render( gRenderer );
+        projGroup[i].render( gRenderer, interpolation );
     }
 
     if ( !dot.getInit() )

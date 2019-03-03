@@ -26,7 +26,8 @@ public:
     // moves dot and check collision
     int move( std::vector<SDL_Rect> *square, std::vector<Circle *> *circle = nullptr );
 
-    void render( SDL_Renderer* gRenderer, LTexture *gProjTexture );
+    void render( SDL_Renderer* gRenderer, LTexture *gDotTexture );
+    void render( SDL_Renderer* gRenderer, LTexture *gDotTexture, double interpolation );
 
     void initBounce();
 

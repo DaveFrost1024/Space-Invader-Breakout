@@ -108,6 +108,12 @@ void Dot::render( SDL_Renderer* gRenderer, LTexture *gDotTexture )
     gDotTexture->render( gRenderer, mPosX - mCollider.r, mPosY - mCollider.r );
 }
 
+void Dot::render( SDL_Renderer* gRenderer, LTexture *gDotTexture, double interpolation )
+{
+    gDotTexture->render( gRenderer, (mPosX - mCollider.r) + (mVelX * interpolation),
+        (mPosY - mCollider.r) + (mVelY * interpolation) );
+}
+
 void Dot::initBounce()
 {
     if ( !init )
