@@ -16,8 +16,8 @@ add_executable(Space-Invader-Breakout
     LTexture.cpp
     WindowController.h
     WindowController.cpp
-    Gameplay.h
-    Gameplay.cpp
+    GameplayController.h
+    GameplayController.cpp
     Paddle.h
     Paddle.cpp
     Dot.h

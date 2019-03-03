@@ -9,7 +9,7 @@
 #include "Setup.h"
 #include "Common.h"
 #include "LTexture.h"
-#include "Gameplay.h"
+#include "GameplayController.h"
 #include "WindowController.h"
 
 
@@ -46,7 +46,7 @@ int main( int argc, char* args[] )
         else
         {   
             // begin the loop
-            gameLoop();
+            GameplayController::gameLoop();
         }
     }
 

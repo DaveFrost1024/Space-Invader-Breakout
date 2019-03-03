@@ -125,48 +125,6 @@ bool loadMedia( TTF_Font* gFont )
     return success;
 }
 
-void startProg( Dot *dot, Paddle *paddle, std::vector<Obstacle> *obsGroup,
-    std::vector<SDL_Rect> *rects, std::vector<Type> *rectTypes )
-{
-    dot->setInit( false );
-    dot->setPos( SCREEN_WIDTH / 2, SCREEN_HEIGHT * 3 / 4 );
-    dot->setVel( 0, 0 );
-    paddle->setFailed( false );
-    paddle->setPos( (SCREEN_WIDTH / 2) - (Paddle::PADDLE_WIDTH / 2), SCREEN_HEIGHT * 7 / 8 );
-    paddle->setVel( 0, 0 );
-
-    obsGroup->clear();
-    rects->clear();
-    rectTypes->clear();
-
-    std::vector<Obstacle> tempObsGroup = generateObstacle( OBSTACLE_ROW, OBSTACLE_COLUMN );
-    for(int i = 0; i < tempObsGroup.size(); i++)
-    {
-        obsGroup->push_back(tempObsGroup[i]);
-    }
-
-    SDL_Rect pRect;
-    pRect.w = Paddle::PADDLE_WIDTH;
-    pRect.h = Paddle::PADDLE_HEIGHT;
-    pRect.x = paddle->getPosX();
-    pRect.y = paddle->getPosY();
-
-    rects->push_back(pRect);
-    rectTypes->push_back(Type::paddle);
-
-    for (int i = 0; i < obsGroup->size(); i++)
-    {
-        SDL_Rect oRect;
-        oRect.w = Obstacle::OBSTACLE_WIDTH;
-        oRect.h = Obstacle::OBSTACLE_HEIGHT;
-        oRect.x = obsGroup->at(i).getPosX();
-        oRect.y = obsGroup->at(i).getPosY();
-
-        rects->push_back(oRect);
-        rectTypes->push_back(Type::obstacle);
-    }
-}
-
 std::vector<Obstacle> generateObstacle( int row, int column )
 {
     std::vector<Obstacle> obsGroup;
